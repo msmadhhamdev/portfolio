@@ -349,9 +349,11 @@ main .intro-section {
     }
     header .menu-btn {
         display: block;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3em;
+        padding: 0 10px;
     }
     header .logo img {
         width: 30px;
