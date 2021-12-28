@@ -208,29 +208,47 @@ main .intro-section {
 }
 
 .projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 35vw 35vw;
 }
 
-.projects .fallback-msg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #aaa;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.4em;
-    animation: load 2s ease-in-out infinite;
-}
-@keyframes load {
-    0% {}
-    50% {opacity: 0;}
-    100% {}
+.projects .project {
+    width: 30vw;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.3);
 }
 
-.projects progress {
-    width: 20vw;
+.projects .project img {
+    width: 100%;
+}
+
+.project {
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project h1 {
+    font-family: "MuseoModerno", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.project p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project p a {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.project p a:hover {
+    background: #eee;
+    color: #333;
+}
+
+.project p a i {
+    font-size: 1.3em;
 }
 
 /* CONTACT */
@@ -425,12 +443,6 @@ main .intro-section {
     .techs-stack img {
         margin: 10px;
         width: 22vw;
-    }
-    .projects video {
-        width: 50vw;
-    }
-    .projects .fallback-msg {
-        font-size: 1em;
     }
     .contact-box {
         font-size: 0.8em;
