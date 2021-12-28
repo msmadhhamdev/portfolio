@@ -210,6 +210,7 @@ main .intro-section {
 .projects {
     display: grid;
     grid-template-columns: 35vw 35vw;
+    gap: 20px;
 }
 
 .projects .project {
@@ -439,6 +440,9 @@ main .intro-section {
         font-size: 0.6em;
         padding: 5px 12px;
         box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.1);
+    }
+    .projects {
+        grid-template-columns: 35vw;
     }
     .techs-stack img {
         margin: 10px;
