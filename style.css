@@ -366,9 +366,9 @@ main .intro-section {
         border-radius: 5px;
     }
     header .logo {
-        font-size: 1em;
+        font-size: 1.8em;
         padding: 0;
-        width: 40vw;
+        width: 60vw;
     }
     header .menu-btn {
         display: block;
@@ -379,7 +379,7 @@ main .intro-section {
         padding: 0 10px;
     }
     header .logo img {
-        width: 30px;
+        width: 14vw;
         border-radius: 5px;
     }
     header nav {
@@ -411,6 +411,9 @@ main .intro-section {
     }
     header nav button {
         text-align: center;
+    }
+    section {
+        height: 80vh;
     }
     .intro-section {
         flex-direction: column;
