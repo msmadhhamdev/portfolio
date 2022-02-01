@@ -1,93 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adhham's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/591980c654.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Nosifer&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/591980c654.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <a href="images/adhham.jpg"><img src="images/adhham.jpg" alt=""></a><a href="index.html">Adhham Dev.</a>
-            </div>
-            <nav id="nav">
-                <h2>Menu</h2>
-                <hr>
-                <a href="#intro-section"><i class="fas fa-house-user"></i> Home</a>
-                <a href="#techs-stack-section"><i class="fas fa-th-large"></i> Techs Stack</a>
-                <a title="No Projects made yet..." href="#projects-section"><i class="fas fa-layer-group"></i> Projects</a>
-                <button title="View Contact" id="contact-btn" onclick="document.getElementById('contact-box').style='display: block';"><i class="fas fa-address-book"></i> Contact</button>
-            </nav>
+      <div class="container">
+        <div class="logo">
+          <a href="images/adhham.jpg"><img src="images/adhham.jpg" alt="" /></a
+          ><a href="index.html">Adhham Dev.</a>
         </div>
-        <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
+        <nav id="nav">
+          <h2>Menu</h2>
+          <hr />
+          <a href="#intro-section"><i class="fas fa-house-user"></i> Home</a>
+          <a href="#techs-stack-section"
+            ><i class="fas fa-th-large"></i> Techs Stack</a
+          >
+          <a title="No Projects made yet..." href="#projects-section"
+            ><i class="fas fa-layer-group"></i> Projects</a
+          >
+          <button
+            title="View Contact"
+            id="contact-btn"
+            onclick="document.getElementById('contact-box').style='display: block';"
+          >
+            <i class="fas fa-address-book"></i> Contact
+          </button>
+        </nav>
+      </div>
+      <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
     </header>
     <main>
-        <section id="intro-section"  class="intro-section">
-            <img src="images/adhham.jpg" alt="">
-            <div class="intro">
-                <h1>Welcome!</h1>
-                <p>Hi, my name is Adhham. I am a self-learning Front end Developer since 2018. I have substantial knowledge of Computer Science on one side, but I prefer Programming. To intensify my skills is my day-to-day goal. Along my wonderful journey, I've learned some Techs and developed my skills. I'll probably be very pleased to help anyone through my skills anytime, anywhere, and at any level of risk, it takes. Joining an association is much more valuable for the group members, and me too. Because collaborating and supporting others with my team is more influential and authentic, providing convenience to one another than being an individual.</p>
-            </div>
-        </section>
-        <section id="techs-stack-section" class="techs-stack-section">
-            <div class="techs-stack">
-                    <div><img loading="lazy" src="images/html5.png" alt="HTML5"></div>
-                    <div><img loading="lazy" src="images/css3.png" alt="CSS3"></div>
-                    <div><img loading="lazy" src="images//js.png" alt="JavaScript"></div>
-                    <div><img loading="lazy" src="images/reactjs.png" alt="React JS"></div>
-                    <div><img loading="lazy" src="images/git.png" alt="Git"></div>
-                    <div><img loading="lazy" src="images/github.png" alt="GitHub"></div>
-                    <div><img loading="lazy" src="images/bootstrap.png" alt="Bootstrap"></div>
-            </div>
-        </section>
-        <section id="projects-section" class="projects-section">
-            <div class="projects">
-                <div class="project">
-                    <img src="images/calculator-project.png" alt="">
-                    <h1>Calculator</h1>
-                    <p><a title="Source Code" href="https://github.com/msmadhhamdev/calculator"><i class="fab fa-github"></i></a><a title="Open" href="https://adhham-calculator.netlify.app/"><i class="fas fa-external-link-alt"></i></a></p>
-                </div>
-                <div class="project">
-                    <img src="images/todo-list-project.png" alt="">
-                    <h1>To-Do List</h1>
-                    <p><a title="Source Code" href="https://github.com/msmadhhamdev/to-do-list"><i class="fab fa-github"></i></a><a title="Open" href="https://adhham-todolist.netlify.app/"><i class="fas fa-external-link-alt"></i></a></p>
-                </div>
-            </div>
-        </section>
-        <div id="contact-box" class="contact-box">
-            <div class="about">
-                <button title="Close" id="close-btn" onclick="document.getElementById('contact-box').style='display: none';"><i class="fas fa-arrow-left"></i></button>
-                <h2>CONTACT</h2>
-                <div><p>Creator :</p><p>Adhham Dev</p></div>
-                <div><p>Email :</p><p><a href="mailto:msmadhhamg@gmail.com?subject=Feedback&body=Hi, how are you?">msmadhhamg@gmail.com</a> / <a href="mailto:msmadhham@outlook.com?subject=Feedback&body=Hi, how are you?">msmadhham@outlook.com</a></p></div>
-                <div><p>Tel :</p><p><a href="tel:0773779296">(+94) 773779296</a> / <a href="tel:0775667943">(+94) 775667943</a></p></div>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-github-square"></i></a>
-            </div>
-            <footer>&copy; Copyright 2022 Adhham, All rights reserved.</footer>
+      <section id="intro-section" class="intro-section">
+        <img src="images/adhham.jpg" alt="" />
+        <div class="intro">
+          <h1>Welcome!</h1>
+          <p>
+            Hi, my name is Adhham. I am a self-learning Front end Developer
+            since 2018. I have substantial knowledge of Computer Science on one
+            side, but I prefer Programming. To intensify my skills is my
+            day-to-day goal. Along my wonderful journey, I've learned some Techs
+            and developed my skills. I'll probably be very pleased to help
+            anyone through my skills anytime, anywhere, and at any level of
+            risk, it takes. Joining an association is much more valuable for the
+            group members, and me too. Because collaborating and supporting
+            others with my team is more influential and authentic, providing
+            convenience to one another than being an individual.
+          </p>
         </div>
+      </section>
+      <section id="techs-stack-section" class="techs-stack-section">
+        <div class="techs-stack">
+          <div><img loading="lazy" src="images/html5.png" alt="HTML5" /></div>
+          <div><img loading="lazy" src="images/css3.png" alt="CSS3" /></div>
+          <div>
+            <img loading="lazy" src="images//js.png" alt="JavaScript" />
+          </div>
+          <div>
+            <img loading="lazy" src="images/reactjs.png" alt="React JS" />
+          </div>
+          <div><img loading="lazy" src="images/git.png" alt="Git" /></div>
+          <div><img loading="lazy" src="images/github.png" alt="GitHub" /></div>
+          <div>
+            <img loading="lazy" src="images/bootstrap.png" alt="Bootstrap" />
+          </div>
+        </div>
+      </section>
+      <section id="projects-section" class="projects-section">
+        <div class="projects">
+          <div class="project">
+            <img src="images/calculator-project.png" alt="" />
+            <h1>Calculator</h1>
+            <p>
+              <a
+                title="Source Code"
+                href="https://github.com/msmadhhamdev/calculator"
+                ><i class="fab fa-github"></i></a
+              ><a title="Open" href="https://adhham-calculator.netlify.app/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </p>
+          </div>
+          <div class="project">
+            <img src="images/todo-list-project.png" alt="" />
+            <h1>To-Do List</h1>
+            <p>
+              <a
+                title="Source Code"
+                href="https://github.com/msmadhhamdev/to-do-list"
+                ><i class="fab fa-github"></i></a
+              ><a title="Open" href="https://adhham-todolist.netlify.app/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="contact-box" class="contact-box">
+        <div class="about">
+          <button
+            title="Close"
+            id="close-btn"
+            onclick="document.getElementById('contact-box').style='display: none';"
+          >
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <h2>CONTACT</h2>
+          <div>
+            <p>Creator :</p>
+            <p>Adhham Dev</p>
+          </div>
+          <div>
+            <p>Email :</p>
+            <p>
+              <a
+                href="mailto:msmadhhamg@gmail.com?subject=Feedback&body=Hi, how are you?"
+                >msmadhhamg@gmail.com</a
+              >
+              /
+              <a
+                href="mailto:msmadhham@outlook.com?subject=Feedback&body=Hi, how are you?"
+                >msmadhham@outlook.com</a
+              >
+            </p>
+          </div>
+          <div>
+            <p>Tel :</p>
+            <p>
+              <a href="tel:0773779296">(+94) 773779296</a> /
+              <a href="tel:0775667943">(+94) 775667943</a>
+            </p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-github-square"></i></a>
+        </div>
+        <footer>&copy; Copyright 2022 Adhham, All rights reserved.</footer>
+      </div>
     </main>
 
     <script>
-        let menu = document.getElementById('nav');
-        let menuBtn = document.getElementById('menu-btn');
-        menuBtn.onclick = () => {
-            if (menu.style.right == '0px') {
-                menu.style.right = '-800px';
-            }
-            else {
-                menu.style.right = '0px';
-            }
+      let menu = document.getElementById('nav');
+      let menuBtn = document.getElementById('menu-btn');
+      menuBtn.onclick = () => {
+        if (menu.style.right == '0px') {
+          menu.style.right = '-800px';
+        } else {
+          menu.style.right = '0px';
         }
+      };
     </script>
-</body>
+  </body>
 </html>
