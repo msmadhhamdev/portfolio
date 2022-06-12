@@ -14,17 +14,32 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   background: linear-gradient(45deg, #008c82, rgb(0, 96, 134));
 }
 
-header h3 {
+header .logo {
+  display: flex;
+  align-items: center;
   color: #fff;
   text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+header .logo img {
+  width: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
 header nav a {
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   padding: 8px 16px;
   text-decoration: none;
@@ -33,15 +48,21 @@ header nav a {
   color: #fff;
 }
 header nav a:hover {
-  color: #008c82;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 header nav a:focus {
-  color: #008c82;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 header nav a:active {
-  color: #000;
+  background-color: #000;
+}
+
+header nav a .nav-icon {
+  color: #fff;
+}
+
+header nav a img {
+  margin-right: 5px;
 }
 
 section {
@@ -81,10 +102,32 @@ footer a {
   line-height: 30px;
 }
 
+.reach-me p {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.reach-me img {
+  margin: auto 5px;
+}
+
 .copyright {
   width: 50%;
   padding: 20px;
   text-align: center;
+}
+
+.copyright .social-links {
+  margin-top: 20px;
+}
+
+.social-links img {
+  margin: auto 10px;
+}
+
+.social-links img:hover {
+  filter:  drop-shadow(1px 2px 3px #000);
 }
 
 /* SCROLLBAR */
