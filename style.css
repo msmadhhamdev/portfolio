@@ -30,6 +30,7 @@ header .logo {
   display: flex;
   align-items: center;
   color: #fff;
+  letter-spacing: 2px;
   text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
   font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -78,21 +79,26 @@ section {
 
 section h2 {
   font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 2px;
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 10px;
   color: #fff;
   background: linear-gradient(45deg, #008c82, #002);
 }
 
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer h2 {
-  padding-bottom: 5px;
   margin-bottom: 20px;
   text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  letter-spacing: 2px;
   font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -110,19 +116,12 @@ footer a {
   line-height: 30px;
 }
 
-.reach-me p {
-  width: 90%;
-  display: flex;
-  align-items: center;
-}
-
 .reach-me img {
   margin: auto 5px;
 }
 
 .copyright {
   width: 50%;
-  padding: 20px;
   text-align: center;
 }
 
