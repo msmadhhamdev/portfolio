@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Aquatico;
+  src: url(fonts/Aquatico-Regular.otf);
+} @font-face {
+  font-family: Nunito;
+  src: url(fonts/Nunito-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +15,14 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Nunito;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   background: linear-gradient(45deg, #008c82, rgb(0, 96, 134));
 }
 
@@ -23,7 +31,7 @@ header .logo {
   align-items: center;
   color: #fff;
   text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header .logo img {
@@ -44,7 +52,6 @@ header nav a {
   padding: 8px 16px;
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #fff;
 }
 header nav a:hover {
@@ -69,6 +76,10 @@ section {
   height: 100vh;
 }
 
+section h2 {
+  font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -79,17 +90,14 @@ footer {
 }
 
 footer h2 {
-  width: 18%;
   padding-bottom: 5px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #eee;
   text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer span {
   font-weight: 900;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 footer a {
   text-decoration: none;
