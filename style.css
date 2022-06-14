@@ -11,34 +11,27 @@
   padding: 0;
   scroll-snap-type: y;
   scroll-snap-stop: normal;
-  scroll-snap-align: start start;
+  scroll-snap-align: center center;
 }
 
 body {
   font-family: Nunito;
+  scroll-behavior: smooth;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 5px 10px;
   background: linear-gradient(45deg, #008c82, rgb(0, 96, 134));
 }
 
 header .logo {
-  display: flex;
-  align-items: center;
   color: #fff;
   letter-spacing: 2px;
   text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
   font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-header .logo img {
-  width: 35px;
-  margin-right: 10px;
-  border-radius: 50%;
 }
 
 header nav {
@@ -78,8 +71,14 @@ section {
 }
 
 section h2 {
+  color: #008c82;
+  
   font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 2px;
+}
+
+#introduction {
+  background-color: #eee;
 }
 
 footer {
