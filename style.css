@@ -50,7 +50,7 @@ header nav a {
   color: #fff;
 }
 header nav a:hover {
-  background: #003;
+  background: linear-gradient(45deg, #007CFF, #008c82);
 }
 header nav a:active {
   background-color: #000;
@@ -168,9 +168,6 @@ section h2 {
   width: max-content;
   overflow-x: auto;
   margin: auto;
-  border-radius: 10px;
-  padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project {
@@ -189,7 +186,7 @@ section h2 {
 
 .project-img {
   width: 100%;
-  border-bottom: 1px solid #aaa;
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.3);
   border-radius: inherit;
 }
 
