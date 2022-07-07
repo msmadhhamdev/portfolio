@@ -31,7 +31,6 @@ header {
 header .logo {
   color: #fff;
   letter-spacing: 2px;
-  text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
   font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -64,6 +63,10 @@ header nav a img {
   margin-right: 5px;
 }
 
+.menu-btn {
+  display: none;
+}
+
 section h2 {
   color: #008c82;
   font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -87,7 +90,7 @@ section h2 {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
   line-break: loose;
   word-wrap: break-word;
-  color: #002;
+  color: #001;
 }
 
 .intro-body {
@@ -138,73 +141,67 @@ section h2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #projects {
   height: 100vh;
-  padding: 20px;
   background-color: #fff;
-  background: url(images/desktop-app.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  backdrop-filter: saturate(10%);
+  
 }
 
 #projects h2 {
-  width: fit-content;
-  margin: 0 auto 100px auto;
-  border-radius: 10px;
-  padding: 10px 20px;
+  padding: 10px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .projects-body {
+  height: 92vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: max-content;
-  overflow-x: auto;
-  margin: auto;
+  flex-wrap: wrap;
 }
 
 .project {
-  height: 60vh;
-  width: 20vw;
-  min-width: 20vw;
-  margin: 0 10px;
+  width: 25vw;
   padding: 5px;
   border-radius: 5px;
-  background-color: #fff;
+  color: #eee;
+  background: linear-gradient(45deg, #008c82, deepskyblue);
   transition: 0.2s;
 }
 .project:hover {
-  box-shadow: -2px 4px 4px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 4px 8px 1px rgba(0, 0, 0, 0.3);
 }
 
 .project-img {
   width: 100%;
   box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.3);
   border-radius: inherit;
+  background-color: #fff;
 }
 
 .project h3 {
-  margin-bottom: 10px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Aquatico, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 2px;
   text-align: center;
-  color: #002;
+  color: #fff;
 }
 
 .project-techs {
   display: flex;
-  height: 40%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .project-techs ul {
-  margin: auto;
   list-style-type: disc;
   list-style-position: inside;
 }
@@ -230,7 +227,7 @@ section h2 {
 footer {
   padding: 10px;
   color: #fff;
-  background: linear-gradient(45deg, #002 52%, #008c82 50%);
+  background: linear-gradient(45deg, #002, #008c82);
 }
 
 footer .footer-content {
@@ -277,7 +274,7 @@ footer a {
   margin: auto 10px;
 }
 
-.social-links img:hover {
+.social-links img:active {
   transform: scale(1.2);
 }
 
@@ -289,4 +286,154 @@ footer a {
 }
 ::-webkit-scrollbar-thumb {
   background-color: #008c82;
+}
+
+/* 1048px Media Query */
+/* Landscape */
+@media screen and (max-width: 1048px) and (orientation: landscape) {
+  header {
+    background: linear-gradient(45deg, #008c82 30%, rgb(0, 96, 134) 30%);
+    font-size: 0.7em;
+  }
+  .intro-body, #projects {
+    font-size: 0.8em;
+  }
+}
+
+/* Portrait */
+@media screen and (max-width: 1048px) and (orientation: portrait) {
+  header {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #008c82 60%, rgb(0, 96, 134) 25%);
+  }
+  header .logo {
+    font-size: 1.2em;
+  }
+  header nav {
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    display: none;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2.2em;
+    background: linear-gradient(45deg, #008c82, rgb(0, 96, 134));
+    box-shadow: -2px 2px 6px 2px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+  }
+  header nav a {
+    padding: 20px 35px;
+  }
+  header nav a img {
+    width: 40px;
+    margin-right: 20px;
+  }
+  header .menu-btn {
+    display: block;
+  }
+  #introduction {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #introduction img {
+    width: 50%;
+  }
+  .intro-body {
+    width: 80%;
+    text-align: justify;
+  }
+  .frontend-stack {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    margin-top: 100px;
+    gap: 50px;
+    grid-template-columns: 50% 50%;
+  }
+  .frontend-stack img {
+    width: 20vw;
+  }
+  footer {
+    font-size: 0.6em;
+    background: linear-gradient(90deg, #002 50%, #008c82 30%);
+  }
+}
+
+/* 768px Media Query */
+/* Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  header {
+    font-size: 0.5em;
+  }
+  .intro-body, #projects {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  header a img {
+    width: 10px;
+  }
+  footer {
+    font-size: 0.6em;
+  }
+}
+
+/* 768px Media Query */
+/* Portrait */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  header {
+    font-size: 0.8em;
+  }
+  header .menu-btn {
+    width: 30px;
+  }
+  nav {
+    top: 55px !important;
+  }
+  nav a {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6em;
+  }
+  nav a img {
+    width: 30px !important;
+  }
+  #introduction img {
+    width: 40vh;
+  }
+  #introduction {
+    font-size: 0.8em;
+  }
+  .intro-body p {
+    line-height: 25px;
+  }
+  .intro-body h2 {
+    text-align: center;
+  }
+  #technologies h2 {
+    margin-bottom: 5px;
+  }
+  .technologies-body img {
+    width: 15vw;
+  }
+  .projects-body {
+    flex-wrap: wrap;
+  }
+  .project {
+    width: 45vw;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+  }
+  .intro-greet {
+    color: #0ff;
+  }
+  #projects {
+    background: #111;
+  }
+  ::-webkit-scrollbar {
+    background-color: #333;
+  }
 }
