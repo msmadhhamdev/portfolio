@@ -147,11 +147,13 @@ section h2 {
 #projects {
   height: 100vh;
   background-color: #fff;
+  background: url(images/Design-Wallpaper-HD.jpg);
 }
 
 #projects h2 {
   padding: 10px;
   text-align: center;
+  -webkit-text-stroke: 0.1px #fff;
 }
 
 .projects-body {
@@ -171,12 +173,13 @@ section h2 {
   padding: 20px;
   border-radius: 5px;
   color: #fff;
-  background: linear-gradient(45deg, #008c82 50%, deepskyblue 50%);
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.6) 50%);
+  backdrop-filter: saturate(10%);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   transition: 0.2s;
 }
 .project:hover {
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(45deg, #008c82, deepskyblue);
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.3) 50%);
 }
 
 .project h3 {
